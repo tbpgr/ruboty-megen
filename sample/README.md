@@ -54,6 +54,7 @@ Or install it yourself as:
 
 |Name|Description|
 |:--|:--|
+|dependency1|dependency1 description|
 |dependency2|dependency2 description|
 
 ## Contributing

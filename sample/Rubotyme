@@ -17,6 +17,11 @@ env do |e|
 end
 
 dependency do |d|
+  d.name "dependency1"
+  d.description "dependency1 description"
+end
+
+dependency do |d|
   d.name "dependency2"
   d.description "dependency2 description"
 end
