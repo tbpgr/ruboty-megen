@@ -2,6 +2,7 @@
 
 Generate README.md for Ruboty Handler + Actions plugin.
 
+[![Gem Version](https://badge.fury.io/rb/ruboty-megen.svg)](http://badge.fury.io/rb/ruboty-megen)
 [![Build Status](https://travis-ci.org/tbpgr/ruboty-megen.png?branch=master)](https://travis-ci.org/tbpgr/ruboty-megen)
 [![Coverage Status](https://coveralls.io/repos/tbpgr/ruboty-megen/badge.png)](https://coveralls.io/r/tbpgr/ruboty-megen)
 
