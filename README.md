@@ -2,6 +2,9 @@
 
 Generate README.md for Ruboty Handler + Actions plugin.
 
+[![Build Status](https://travis-ci.org/tbpgr/ruboty-megen.png?branch=master)](https://travis-ci.org/tbpgr/ruboty-megen)
+[![Coverage Status](https://coveralls.io/repos/tbpgr/ruboty-megen/badge.png)](https://coveralls.io/r/tbpgr/ruboty-megen)
+
 [Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
 
 ## Installation
