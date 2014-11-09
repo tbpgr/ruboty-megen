@@ -28,7 +28,7 @@ Or install it yourself as:
 |user_name|github user name|tbpgr|
 |gem_class_name|gem class name|Ume|
 |gem_name|gem name|ume|
-|title|タイトル文字列|An Ruboty Handler + Actions to output N line messages.|
+|title|title|An Ruboty Handler + Actions to output N line messages.|
 |env/name|ENV variable name|DEFAULT_UME_TEXT|
 |env/description|ENV description|default ume text|
 |dependencies/name|dependency name|Ume API|
