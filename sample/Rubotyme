@@ -1,0 +1,34 @@
+# encoding: utf-8
+user_name "tbpgr"
+
+gem_class_name "Ume"
+gem_name "ume"
+
+title "An Ruboty Handler + Actions to output N line messages."
+
+env do |e|
+  e.name "ENV1"
+  e.description "ENV1 desc"
+end
+
+env do |e|
+  e.name "ENV2"
+  e.description "ENV2 desc"
+end
+
+dependency do |d|
+  d.name "dependency2"
+  d.description "dependency2 description"
+end
+
+command do |c|
+  c.name "ume"
+  c.pattern "/ume (?<count>.*?)\z/"
+  c.description "output empty message N lines (<count> times)"
+end
+
+command do |c|
+  c.name "umec"
+  c.pattern "/umec (?<text>.+?) (?<count>.*?)\z/"
+  c.description "output <text> message N lines (<count> times)"
+end

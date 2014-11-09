@@ -1,0 +1,12 @@
+implement 'ruboty_megen_core.rb' your main logic. pass rspec all specs.
+implement bin 'bin/ruboty_megen'.
+edit 'ruboty_megen.gemspec'.
+edit 'README.md'.
+edit 'LICENSE.txt'.
+git add, commit.
+rake install.
+check gem(test using).
+gem uninstall ruboty_megen.
+rake release.
+gem install ruboty_megen.
+after release check.
