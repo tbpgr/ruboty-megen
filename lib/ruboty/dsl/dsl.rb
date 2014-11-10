@@ -35,7 +35,7 @@ module Ruboty
 
     def initialize
       @ruboty_megen = Ruboty::DslModel.new
-      @ruboty_megen.user_name = 'your githbu username'
+      @ruboty_megen.user_name = 'your github username'
       @ruboty_megen.gem_class_name = 'your_gem_class_name'
       @ruboty_megen.gem_name = 'your_gem_name'
       @ruboty_megen.title = 'title'
