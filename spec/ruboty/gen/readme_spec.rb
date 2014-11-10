@@ -1,9 +1,6 @@
 # encoding: utf-8
 require 'spec_helper'
 require 'ruboty/gen'
-# require 'ruboty/models/env'
-# require 'ruboty/models/dependency'
-# require 'ruboty/models/command'
 
 # rubocop:disable LineLength, UnusedMethodArgument
 describe Ruboty::Gen::Readme do
