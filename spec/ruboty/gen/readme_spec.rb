@@ -82,8 +82,8 @@ Or install it yourself as:
 
 |Command|Pattern|Description|
 |:--|:--|:--|
-|command1|/command1 &#124; hoge/|command1 description|
-|command2|/command2 &#124; hoge/|command2 description|
+|[command1](#command1)|/command1 &#124; hoge/|command1 description|
+|[command2](#command2)|/command2 &#124; hoge/|command2 description|
 
 ## Usage
 ### command1

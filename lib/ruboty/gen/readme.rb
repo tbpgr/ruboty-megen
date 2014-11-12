@@ -178,7 +178,8 @@ Or install it yourself as:
 
       def self.command_table(commands)
         command_table = commands.each_with_object([]) do |e, memo|
-          list = ['', e.read_name, e.read_pattern, e.read_description, '']
+          command_link = "[#{e.read_name}](##{e.read_name})"
+          list = ['', command_link, e.read_pattern, e.read_description, '']
           list = normalize_markdown_table(list)
           memo << list.join('|')
         end

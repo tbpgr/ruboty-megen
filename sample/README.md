@@ -25,8 +25,8 @@ Or install it yourself as:
 
 |Command|Pattern|Description|
 |:--|:--|:--|
-|ume|/ume (?<count>.*?)z/|output empty message N lines (<count> times)|
-|umec|/umec (?<text>.+?) (?<count>.*?)z/|output <text> message N lines (<count> times)|
+|[ume](#ume)|/ume (?<count>.*?)z/|output empty message N lines (<count> times)|
+|[umec](#umec)|/umec (?<text>.+?) (?<count>.*?)z/|output <text> message N lines (<count> times)|
 
 ## Usage
 ### ume
