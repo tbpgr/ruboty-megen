@@ -5,7 +5,7 @@ module Ruboty
     # Command
     class Command
       def initialize
-        @name, @pattern, @description = ''
+        @name, @pattern, @description = '', @example = ''
       end
 
       def name(name)
@@ -20,7 +20,11 @@ module Ruboty
         @description = description
       end
 
-      [:name, :pattern, :description].each do |m|
+      def example(example)
+        @example = example
+      end
+
+      [:name, :pattern, :description, :example].each do |m|
         define_method :"read_#{m}" do
           instance_variable_get("@#{m}")
         end

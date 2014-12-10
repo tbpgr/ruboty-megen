@@ -1,11 +1,11 @@
 # encoding: utf-8
 require 'erb'
 
+# rubocop:disable LineLength
 module Ruboty
   module Gen
     # ReadmeGen Core
     class Readme
-      # rubocop:disable LineLength
       README = 'README.md'
       RUBOTY_MEGEN_FILE = 'Rubotyme'
       RUBOTY_MEGEN_TEMPLATE = <<-EOS
@@ -80,6 +80,11 @@ command do |c|
   # description allow only String
   # description's default value => ""
   c.description ""
+
+  # example
+  # example allow only String
+  # example's default value => ""
+  c.example ""
 end
       EOS
 
@@ -136,7 +141,6 @@ Or install it yourself as:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
       EOS
-      # rubocop:enable LineLength
 
       # generate Rubotymegenfile to current directory.
       def self.init
@@ -191,7 +195,8 @@ Or install it yourself as:
         usages = commands.each_with_object([]) do |e, memo|
           name = e.read_name
           description = e.read_description
-          row = ["### #{name}", "* #{description}", '', '~~~', '', '~~~']
+          example = e.read_example
+          row = ["### #{name}", "* #{description}", '', '~~~', example.chomp, '~~~']
           memo << row.join("\n")
         end
         usages.join("\n\n")
@@ -225,3 +230,4 @@ Or install it yourself as:
     end
   end
 end
+# rubocop:enable LineLength

@@ -1,3 +1,9 @@
+## v.1.0.2
+2014/12/10
+
+### New Feature
+* Add example attribute to Command Model
+
 ## v.1.0.1
 2014/11/12
 

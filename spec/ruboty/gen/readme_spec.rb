@@ -39,12 +39,20 @@ command do |c|
   c.name 'command1'
   c.pattern '/command1 | hoge/'
   c.description 'command1 description'
+  c.example <<-EOT
+example1_1
+example1_2
+  EOT
 end
 
 command do |c|
   c.name 'command2'
   c.pattern '/command2 | hoge/'
   c.description 'command2 description'
+  c.example <<-EOT
+example2_1
+example2_2
+  EOT
 end
       EOS
       template
@@ -90,14 +98,16 @@ Or install it yourself as:
 * command1 description
 
 ~~~
-
+example1_1
+example1_2
 ~~~
 
 ### command2
 * command2 description
 
 ~~~
-
+example2_1
+example2_2
 ~~~
 
 ## ENV

@@ -40,6 +40,7 @@ Or install it yourself as:
 |commands/command name|Ruboty::Handler.on name|ume|
 |commands/command pattern|Ruboty::Handler.on pattern|/ume (?<count>.*?)\z/  |
 |commands/command description|Ruboty::Handler.on description|output empty message N lines (<count> times)|
+|commands/command example|Ruboty::Handler.on example|example usage|
 
 ## Usage
 ### init
@@ -82,12 +83,42 @@ command do |c|
   c.name "ume"
   c.pattern "/ume (?<count>.*?)\z/"
   c.description "output empty message N lines (<count> times)"
+  c.example <<-EOS
+> ruboty help
+ruboty /ume (?<count>.*?)\z/               - output empty message N lines (<count> times)
+> ruboty ume 3
+.
+.
+.
+> ruboty ume 5
+.
+.
+.
+.
+.
+  EOS
 end
 
 command do |c|
   c.name "umec"
   c.pattern "/umec (?<text>.+?) (?<count>.*?)\z/"
   c.description "output <text> message N lines (<count> times)"
+  c.example <<-EOS
+> ruboty help
+ruboty /umec (?<text>.+?) (?<count>.*?)\z/ - output <text> message N lines (<count> times)
+> ruboty umec hoge 3
+hoge
+hoge
+hoge
+
+> ruboty umec hoge 5
+hoge
+hoge
+hoge
+hoge
+hoge
+
+  EOS
 end
 ~~~
 
