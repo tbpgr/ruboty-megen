@@ -9,6 +9,7 @@ Generate README.md for Ruboty Handler + Actions plugin.
 [Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
 
 ## :notes: Image
+Rubotyme => README.md
 
 :tshirt::jeans::grey_question::grey_question::grey_question::tophat:  
 :tophat::mans_shoe::arrow_right::collision::arrow_right::man:  
