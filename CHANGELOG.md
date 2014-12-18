@@ -1,3 +1,9 @@
+## v.1.0.3
+2014/12/18
+
+### New Feature
+* Add emoji option that generate emoji headings
+
 ## v.1.0.2
 2014/12/10
 

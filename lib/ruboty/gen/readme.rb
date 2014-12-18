@@ -142,6 +142,60 @@ Or install it yourself as:
 5. Create a new Pull Request
       EOS
 
+      RUBOTY_README_EMOJI_TEMPLATE = <<-EOS
+# Ruboty::<%=gem_class_name%>
+
+An Ruboty Handler + Actions to <%=title%>.
+
+[Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
+
+## :arrow_down: Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'ruboty-<%=gem_name%>'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install ruboty-<%=gem_name%>
+
+
+## :cl: Commands
+
+|Command|Pattern|Description|
+|:--|:--|:--|
+<%=command_table%>
+
+## :scroll: Usage
+<%=usages%>
+
+## :earth_asia: ENV
+
+|Name|Description|
+|:--|:--|
+<%=env_table%>
+
+## :couple: Dependency
+
+|Name|Description|
+|:--|:--|
+<%=dependency_table%>
+
+## :two_men_holding_hands: Contributing :two_women_holding_hands:
+
+1. Fork it ( https://github.com/<%=user_name%>/ruboty-<%=gem_name%>/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+      EOS
+
       # generate Rubotymegenfile to current directory.
       def self.init
         File.open(RUBOTY_MEGEN_FILE, 'w') do |f|
@@ -150,11 +204,11 @@ Or install it yourself as:
       end
 
       # generate ruboty README.md template.
-      def self.generate
+      def self.generate(options = {})
         src = read_dsl
         dsl = Ruboty::Dsl.new
         dsl.instance_eval src
-        src = apply(dsl.ruboty_megen)
+        src = apply(dsl.ruboty_megen, options)
         File.open(README, 'w:utf-8') { |file|file.puts src }
       end
 
@@ -164,7 +218,7 @@ Or install it yourself as:
       private_class_method :read_dsl
 
       # rubocop:disable UselessAssignment
-      def self.apply(config)
+      def self.apply(config, options)
         gem_class_name = config.gem_class_name
         gem_name = config.gem_name
         title = config.title
@@ -174,7 +228,7 @@ Or install it yourself as:
         dependency_table = dependency_table(config.dependencies)
         user_name = config.user_name
 
-        erb = ERB.new(RUBOTY_README_TEMPLATE)
+        erb = ERB.new(choose_template(options))
         erb.result(binding)
       end
       private_class_method :apply
@@ -227,6 +281,11 @@ Or install it yourself as:
         texts.map { |e| e.gsub('|', '&#124;') }
       end
       private_class_method :normalize_markdown_table
+
+      def self.choose_template(options)
+        options[:emoji] ? RUBOTY_README_EMOJI_TEMPLATE : RUBOTY_README_TEMPLATE
+      end
+      private_class_method :choose_template
     end
   end
 end

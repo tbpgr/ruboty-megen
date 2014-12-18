@@ -62,6 +62,7 @@ end
       {
         case_no: 1,
         case_title: 'valid case',
+        options: {},
         expected: <<-EOS
 # Ruboty::SampleGem
 
@@ -132,6 +133,81 @@ example2_2
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
         EOS
+      },
+      {
+        case_no: 1,
+        case_title: 'valid case',
+        options: { emoji: true },
+        expected: <<-EOS
+# Ruboty::SampleGem
+
+An Ruboty Handler + Actions to output sample messages.
+
+[Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
+
+## :arrow_down: Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'ruboty-sample_gem'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install ruboty-sample_gem
+
+
+## :cl: Commands
+
+|Command|Pattern|Description|
+|:--|:--|:--|
+|[command1](#command1)|/command1 &#124; hoge/|command1 description|
+|[command2](#command2)|/command2 &#124; hoge/|command2 description|
+
+## :scroll: Usage
+### command1
+* command1 description
+
+~~~
+example1_1
+example1_2
+~~~
+
+### command2
+* command2 description
+
+~~~
+example2_1
+example2_2
+~~~
+
+## :earth_asia: ENV
+
+|Name|Description|
+|:--|:--|
+|ENV1|ENV1 description|
+|ENV2|ENV2 description|
+
+## :couple: Dependency
+
+|Name|Description|
+|:--|:--|
+|dependency1 name|dependency1 description|
+|dependency2 name|dependency2 description|
+
+## :two_men_holding_hands: Contributing :two_women_holding_hands:
+
+1. Fork it ( https://github.com/tbpgr/ruboty-sample_gem/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+        EOS
       }
     ]
 
@@ -144,7 +220,7 @@ example2_2
           # nothing
 
           # -- when --
-          Ruboty::Gen::Readme.generate
+          Ruboty::Gen::Readme.generate(c[:options])
           actual = File.open(Ruboty::Gen::Readme::README, 'r:utf-8') { |e|e.read }
 
           # -- then --

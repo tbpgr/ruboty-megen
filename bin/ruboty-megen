@@ -12,8 +12,9 @@ module Ruboty
     class_option :version, type: :boolean, desc: 'version'
 
     desc 'generate', 'Generate README.md template'
+    option :emoji, type: :boolean, desc: 'Generate README.md template with emoji headings'
     def generate
-      Ruboty::Gen::Readme.generate
+      Ruboty::Gen::Readme.generate(options)
     end
 
     desc 'init', 'generate Rubotyme template'

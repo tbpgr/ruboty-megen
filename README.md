@@ -8,7 +8,15 @@ Generate README.md for Ruboty Handler + Actions plugin.
 
 [Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
 
-## Installation
+## :notes: Image
+
+:tshirt::jeans::grey_question::grey_question::grey_question::tophat:
+:tophat::mans_shoe::arrow_right::collision::arrow_right::man:
+:man::grey_question::grey_question::grey_question::grey_question::tshirt:
+:grey_question::grey_question::grey_question::grey_question::grey_question::jeans:
+:grey_question::grey_question::grey_question::grey_question::grey_question::mans_shoe:
+
+## :arrow_down: Installation
 
 Add this line to your application's Gemfile:
 
@@ -24,7 +32,7 @@ Or install it yourself as:
 
     $ gem install ruboty-megen
 
-## Rubotyme
+## :blue_book: Rubotyme
 ### Setting File Parameters
 
 |key|value|example|
@@ -42,7 +50,7 @@ Or install it yourself as:
 |commands/command description|Ruboty::Handler.on description|output empty message N lines (<count> times)|
 |commands/command example|Ruboty::Handler.on example|example usage|
 
-## Usage
+## :scroll: Usage
 ### init
 generate Rubotyme template file.
 
@@ -132,7 +140,22 @@ $ ruboty-megen generate
 
 [sample output ruboty-ume README](./sample/README.md)
 
-## Contributing
+### generate with emoji option
+generate Ruboty Handler + Action README.md template with emoji headings
+
+* edit Rubotyme file (previous case)
+
+* generate README
+
+~~~
+$ ruboty-megen generate --emoji
+~~~
+
+* output
+
+[sample output ruboty-ume README](./sample/README_emoji.md)
+
+## :two_men_holding_hands: Contributing :two_women_holding_hands:
 
 1. Fork it ( https://github.com/tbpgr/ruboty_megen/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
