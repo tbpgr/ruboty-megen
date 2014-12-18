@@ -10,11 +10,11 @@ Generate README.md for Ruboty Handler + Actions plugin.
 
 ## :notes: Image
 
-:tshirt::jeans::grey_question::grey_question::grey_question::tophat:
-:tophat::mans_shoe::arrow_right::collision::arrow_right::man:
-:man::grey_question::grey_question::grey_question::grey_question::tshirt:
-:grey_question::grey_question::grey_question::grey_question::grey_question::jeans:
-:grey_question::grey_question::grey_question::grey_question::grey_question::mans_shoe:
+:tshirt::jeans::grey_question::grey_question::grey_question::tophat:  
+:tophat::mans_shoe::arrow_right::collision::arrow_right::man:  
+:man::grey_question::grey_question::grey_question::grey_question::tshirt:  
+:grey_question::grey_question::grey_question::grey_question::grey_question::jeans:  
+:grey_question::grey_question::grey_question::grey_question::grey_question::mans_shoe:  
 
 ## :arrow_down: Installation
 
