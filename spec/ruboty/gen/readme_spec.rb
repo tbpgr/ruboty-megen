@@ -82,11 +82,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install ruboty-sample_gem
-
-
 ## Commands
 
 |Command|Pattern|Description|
@@ -156,11 +151,6 @@ gem 'ruboty-sample_gem'
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install ruboty-sample_gem
-
 
 ## :cl: Commands
 
