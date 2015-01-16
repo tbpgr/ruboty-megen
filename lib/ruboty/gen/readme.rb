@@ -107,11 +107,6 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install ruboty-<%=gem_name%>
-
-
 ## Commands
 
 |Command|Pattern|Description|
@@ -160,11 +155,6 @@ gem 'ruboty-<%=gem_name%>'
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install ruboty-<%=gem_name%>
-
 
 ## :cl: Commands
 
