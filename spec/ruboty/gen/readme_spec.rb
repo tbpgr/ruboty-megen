@@ -66,7 +66,7 @@ end
         expected: <<-EOS
 # Ruboty::SampleGem
 
-An Ruboty Handler + Actions to output sample messages.
+A Ruboty Handler + Actions to output sample messages.
 
 [Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
 
@@ -136,7 +136,7 @@ example2_2
         expected: <<-EOS
 # Ruboty::SampleGem
 
-An Ruboty Handler + Actions to output sample messages.
+A Ruboty Handler + Actions to output sample messages.
 
 [Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
 

@@ -91,7 +91,7 @@ end
       RUBOTY_README_TEMPLATE = <<-EOS
 # Ruboty::<%=gem_class_name%>
 
-An Ruboty Handler + Actions to <%=title%>.
+A Ruboty Handler + Actions to <%=title%>.
 
 [Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
 
@@ -140,7 +140,7 @@ And then execute:
       RUBOTY_README_EMOJI_TEMPLATE = <<-EOS
 # Ruboty::<%=gem_class_name%>
 
-An Ruboty Handler + Actions to <%=title%>.
+A Ruboty Handler + Actions to <%=title%>.
 
 [Ruboty](https://github.com/r7kamura/ruboty) is Chat bot framework. Ruby + Bot = Ruboty
 
